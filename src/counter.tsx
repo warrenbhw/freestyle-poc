@@ -5,6 +5,7 @@ import { CounterCloudState } from "./counter-state";
 
 export function Counter() {
   let counterState: CloudState<CounterCloudState>;
+  
   onMount(() => {
     counterState = useCloud<typeof CounterCloudState>("Counter");
 
